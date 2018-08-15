@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="e-COUNSELLING"
+  id="myeclipse.1331018446783"
+  context-root="/e-COUNSELLING"
+  j2ee-spec="5.0"
+  archive="e-COUNSELLING.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

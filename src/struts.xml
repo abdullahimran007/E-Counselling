@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default">
+<action name="Register" class="package1.Register" method="StudentRegister">
+<result name="registersuccess">regdsuccess.jsp</result>
+</action>
+<action name="login" class="package1.Register" method="LoginData">
+<result name="admin">/adminhome.jsp</result>
+<result name="college">/collegehome.jsp</result>
+
+<result name="student">/stdnt.jsp</result>
+<result name="loginfail">/Login.jsp</result>
+</action>
+<action name="StudMgt" class="package1.Register" method="StudentMgt">
+<result name="displaystud">/Approvest.jsp</result>
+</action>
+<action name="SearchAction" class="package1.Register" method="SelectStd">
+<result name="displaystud">/Approvest2.jsp</result>
+</action>
+<action name="ApproveStudent" class="package1.Register" method="Approved">
+<result name="success">/Approvest2.jsp</result>
+</action>
+<action name="RejStudMgt" class="package1.Register" method="RejStud">
+<result name="reject1">/Rejectstudent.jsp</result>
+</action>
+<action name="SearchStudent" class="package1.Register" method="SelectStd">
+<result name="displaystud">/Rejectstudent2.jsp</result>
+</action>
+<action name="Rejectstudent1" class="package1.Register" method="Reject">
+<result name="success1">/Rejectstudent2.jsp</result>
+</action>
+<action name="MbaReg" class="package1.Register" method="CollgData">
+<result name="clgregsucc">/CollgRegSuccess.jsp</result>
+</action>
+<action name="McaReg" class="package1.Register" method="CollgData">
+<result name="clgregsucc">/CollgRegSuccess.jsp</result>
+</action>
+<action name="btechReg" class="package1.Register" method="CollgData">
+<result name="clgregsucc">/CollgRegSuccess.jsp</result>
+</action>
+<action name="CollgMgt" class="package1.Register" method="CollegeMgt">
+<result name="dispcoll">/approve.jsp</result>
+</action>
+<action name="SearchCollg" class="package1.Register" method="SelectCollg">
+<result name="displayclg">approve1.jsp</result>
+</action>
+<action name="ApproveCollg" class="package1.Register" method="ApproveColg">
+<result name="approv">approve1.jsp</result>
+</action>
+<action name="RejclgMgt" class="package1.Register" method="rejColg">
+<result name="dispcoll">/reject.jsp</result>
+</action>
+<action name="SearchColg" class="package1.Register" method="SelectCollg">
+<result name="displayclg">reject1.jsp</result>
+</action>
+<action name="Rejectstudent" class="package1.Register" method="Rejectclg">
+<result name="reject">reject1.jsp</result>
+</action>
+<action name="AdminCounsel" class="package1.Register" method="CounselMgt">
+<result name="dispid">/Counsellingadmin.jsp</result>
+</action>
+<action name="view" class="package1.Register" method="Viewregd">
+<result name="see">/VREGD.jsp</result>
+</action>
+
+<action name="GiveChmgt" class="package1.Register" method="ChoiceMgt">
+<result name="choice">/givechoice.jsp</result>
+</action>
+<action name="GiveCh" class="package1.Register" method="GiveChoice">
+<result name="choice">/givechoice.jsp</result>
+</action>
+<action name="edit" class="package1.Register" method="Editregd">
+<result name="edit">/EREGD.jsp</result>
+</action>
+<action name="update" class="package1.Register" method="updateregd">
+<result name="update">/EREGD.jsp</result>
+</action>
+<action name="notice" class="package1.Register" method="noticemgt">
+<result name="notices">/NoticeManagement.jsp</result>
+</action>
+<action name="viewnotice" class="package1.Register" method="noticemanage">
+<result name="address">/viewnotice1.jsp </result>
+</action>
+<action name="notice1" class="package1.Register" method="viewn">
+<result name="viewno">/viewnotice.jsp </result>
+</action>
+<action name="feedback" class="package1.Register" method="feedbackmgt">
+<result name="feedbacks">/feedback.jsp</result>
+</action>
+<action name="viewfeed" class="package1.Register" method="FedbkMgt">
+<result name="viewfeed">/viewfeedback.jsp</result>
+</action>
+<action name="feed" class="package1.Register" method="ViewFeedBk">
+<result name="adminfeed">/viewfeedback1.jsp</result>
+</action>
+<action name="changepwd" class="package1.Register" method="changemgt">
+<result name="cpassword">/changepassword.jsp</result>
+</action>
+<action name="smba" class="package1.Register" method="slctmba">
+<result name="selectmba">/selectmba.jsp</result>
+</action>
+<action name="viewmba" class="package1.Register" method="viewmba">
+<result name="vmba">/VMBA.jsp</result>
+</action>
+<action name="smca" class="package1.Register" method="slctmca">
+<result name="selectmca">/selectmca.jsp</result>
+</action>
+<action name="viewmca" class="package1.Register" method="viewmca">
+<result name="vmca">/VMCA.jsp</result>
+</action>
+
+<action name="sbtech" class="package1.Register" method="slctbtech">
+<result name="selectbtech">/selectbtech.jsp</result>
+</action>
+<action name="viewbtech" class="package1.Register" method="viewbtech">
+<result name="vbtech">/VBTECH.jsp</result>
+</action>
+<action name="allot" class="package1.Register" method="allotment">
+<result name="alloted">/Counsellingadmin2.jsp</result>
+</action>
+<action name="AllotAction" class="package1.Register" method="Allot">
+<result name="allot">/Counsellingadmin2.jsp</result>
+</action>
+<action name="ViewCMgt" class="package1.Register" method="StudViewConsel">
+<result name="viewcnsl">/VCOUNSELLING.jsp</result>
+</action>
+<action name="LOGOUT" class="package1.Register" method="logoutadmin">
+<result name="logout">/LOGOUT.jsp</result>
+</action>
+<action name="provisional" class="package1.Register" method="PrntRegCard">
+<result name="print">/stProvisionalAllotment.jsp</result>
+</action>
+<action name="viewclg" class="package1.Register" method="ViewColl">
+<result name="viewcolg">/viewclg details.jsp</result>
+</action>
+<action name="editclg" class="package1.Register" method="EditColl">
+<result name="editcolg">/editclg details.jsp</result>
+</action>
+<action name="updateclg" class="package1.Register" method="UpdColl">
+<result name="updatecolg">/editclg details.jsp</result>
+</action>
+</package>
+</struts>    
